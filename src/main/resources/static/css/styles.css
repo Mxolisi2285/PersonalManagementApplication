@@ -1,0 +1,96 @@
+/* ---------------- Colors ---------------- */
+:root {
+    --primary: #2C5282;          /* Navy Blue */
+    --background: #EDF2F7;       /* Light Sky Gray */
+    --accent: #4299E1;           /* Electric Blue */
+    --highlight: #ECC94B;        /* Soft Gold */
+    --text-dark: #1A202C;        /* Dark Text */
+    --text-light: #F7FAFC;       /* Light Text */
+}
+
+/* ---------------- Global Styles ---------------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--text-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: bold;
+}
+
+/* ---------------- Buttons ---------------- */
+.btn-primary {
+    background-color: var(--accent);
+}
+
+.btn-edit {
+    background-color: var(--primary);
+}
+
+.btn-delete {
+    background-color: #E53E3E; /* red for delete */
+}
+
+.btn-logout {
+    background-color: #718096; /* muted gray */
+}
+
+/* ---------------- Main Content ---------------- */
+main {
+    padding: 2rem;
+}
+
+.create-note, .notes-list {
+    margin-bottom: 2rem;
+}
+
+.create-note input[type="text"],
+.create-note textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #CBD5E0; /* light gray border */
+}
+
+.note-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.note-card h3 {
+    margin-top: 0;
+}
+
+.note-actions {
+    margin-top: 0.5rem;
+}
+
+.note-actions a {
+    margin-right: 0.5rem;
+}

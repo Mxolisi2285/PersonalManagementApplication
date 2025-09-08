@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EDF2F7; /* Light Sky Gray */
+    color: #2C5282; /* Navy Blue text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2C5282; /* Navy Blue */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.btn-logout {
+    background-color: #ECC94B; /* Soft Gold */
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #2C5282;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.create-note, .notes-list {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CBD5E0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button.btn-primary {
+    background-color: #4299E1; /* Electric Blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button.btn-primary:hover {
+    background-color: #7F9CF5; /* Periwinkle */
+}
+
+.note-card {
+    border: 1px solid #CBD5E0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #EDF2F7;
+}
+
+.note-actions a {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-edit {
+    background-color: #4299E1;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #7F9CF5;
+}
+
+.btn-delete {
+    background-color: #ECC94B;
+    color: #2C5282;
+}
+
+.btn-delete:hover {
+    opacity: 0.8;
+}

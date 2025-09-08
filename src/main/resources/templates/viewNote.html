@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View Note</title>
+    <link rel="stylesheet" th:href="@{/css/viewNote.css}">
+</head>
+<body>
+<header>
+    <h1>View Note</h1>
+    <a th:href="@{/home}" class="btn btn-back">Back to Home</a>
+</header>
+
+<main>
+    <h2 th:text="${note.title}">Note Title</h2>
+    <p class="note-content" th:utext="${note.content}">Note content goes here...</p>
+
+    <a th:href="@{/notes/edit/{id}(id=${note.id})}" class="btn btn-edit">Edit Note</a>
+</main>
+</body>
+</html>

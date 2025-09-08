@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Note</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <script src="https://cdn.tiny.cloud/1/YOUR_API_KEY/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#noteContent',
+            menubar: false,
+            plugins: 'lists link image preview',
+            toolbar: 'undo redo | formatselect | bold italic underline | bullist numlist | link image | preview',
+            height: 300
+        });
+    </script>
+</head>
+<body>
+<main>
+    <h1>Edit Note</h1>
+    <form th:action="@{/notes/update}" method="post">
+        <input type="hidden" name="id" th:value="${note.id}" />
+        <input type="text" name="title" th:value="${note.title}" required />
+        <textarea id="noteContent" name="content" th:text="${note.content}" required></textarea>
+        <button type="submit" class="btn btn-primary">Update Note</button>
+    </form>
+    <a href="/notes" class="btn btn-secondary">Back</a>
+</main>
+</body>
+</html>

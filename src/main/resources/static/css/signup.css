@@ -1,0 +1,104 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body {
+    background: #EDF2F7; /* Light Sky Gray */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login container */
+.login-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    border-top: 4px solid #2C5282; /* Navy Blue Accent */
+}
+
+/* Heading */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2C5282; /* Navy Blue */
+    font-weight: bold;
+}
+
+/* Form fields */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #2C5282; /* Navy Blue */
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #A0AEC0; /* Subtle Gray Border */
+    border-radius: 6px;
+    outline: none;
+    background: #F7FAFC; /* Soft Input Background */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #4299E1; /* Electric Blue */
+    box-shadow: 0 0 6px rgba(66, 153, 225, 0.4);
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2C5282; /* Navy Blue */
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #4299E1; /* Electric Blue Hover */
+}
+
+/* Error/Highlight Messages */
+.error-message {
+    color: #ECC94B; /* Soft Gold */
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Links or Additional Actions */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #7F9CF5; /* Periwinkle */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4299E1; /* Electric Blue */
+}
